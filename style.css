@@ -1,0 +1,674 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Pacifico&display=swap');
+body {
+    margin: 0px;
+}
+
+#wraper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    float: left;
+    width: 100%;
+    min-height: 500px;
+    background-image: url('./Thai\ Red\ Curry\ Noodle\ Soup\ with\ Chicken.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+}
+
+#menu-wrap {
+    position: fixed;
+    height: 85px;
+    width: 100%;
+    top: 0;
+    color: #f2f2f2;
+    background: black;
+    z-index: 1000;
+}
+
+.menu-wrap-wrap {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+menu#menu #logo {
+    float: left;
+}
+
+#logo img {
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+
+    /* margin-top: 5px; */
+}
+
+.topnav {
+    margin: 20px;
+    right: 0px;
+    position:fixed;
+    float: center;
+    overflow: hidden;
+    float: center;
+    z-index: 99;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align:justify;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menu {
+  
+    color: white;
+    float: left;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.menu .menu-button {
+    padding: 14px 16px;
+    float: left; /* chữ đồ ăn đang cùng hàng với đồ uống thì nhảy lên chung hàng với Menu*/
+    border: none;
+    display: block;
+    color: white;
+    background: 0;
+    text-align: center;
+    font-size: 17px;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background: black;
+    margin-top: 50px;
+}
+
+.menu-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* .topnav a:hover, */
+
+.menu:hover .menu-button {
+    color: white;
+
+}
+
+.menu:hover .menu-content {
+    display: block; /*chạy menu xún đồ ăn , đồ uống*/
+}
+
+.topnav a:hover {
+    border-bottom: #B40404 1px solid;
+}
+
+.topnav a.active {
+    color: white;
+    width: 150px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.overplay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 3;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#tintuc {
+    font-family: 'Anton', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    font-style: normal;
+    margin-left: 25px;
+    padding: 15px;
+    border: 3px #fff solid;
+    position: absolute;
+    bottom: 11%;
+}
+
+
+/* body */
+
+article {
+    float: left;
+    width: 100%;
+    min-height: 600px;
+    margin: 10px 0px;
+}
+
+section {
+    float: left;
+    width: 100%;
+    min-height: 300px;
+}
+
+.km2 {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+}
+
+.km1 {
+    float: left;
+    width: 100%;
+    min-height: 300px;
+}
+
+
+/* tenbang */
+
+.ten-bang {
+    /* width: 97.9%; */
+    text-align: left;
+    /* background: rgb(54, 12, 12); */
+    color: black;
+}
+
+.ten-bang h1 {
+    /* font-family: 'Dancing Script', cursive; */
+    font-size: 2em;
+    border-bottom: 1px  rgb(212, 109, 12) solid;
+}
+
+
+/* icon */
+
+.icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    float: left;
+    transform: translateY(-80px);
+}
+
+.icons i {
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    width: 25px;
+    height: 24px;
+    padding-top: 4px;
+    line-height: 1;
+    background: rgb(255, 255, 255);
+    color: #B40404;
+    font-size: 20px;
+    display: block;
+    margin-top: 7px;
+    transition: 1s;
+    z-index: 10000;
+}
+
+.icons i:hover {
+    background: #B40404;
+    color: rgb(255, 255, 255);
+    transform: scale(1.2) rotate(360deg);
+    width: 27px;
+    height: 26px;
+}
+
+
+/* box1 */
+
+.box1 {
+    position: relative;
+    float: left;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #b1ccef;
+    /* background: rgb(255, 255, 255); */
+    min-height: 350px;
+    margin: 5px 20px;
+    /* overflow: hidden; */
+}
+
+.box1 img {
+    /* position: absolute; */
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    z-index: 1;
+    transition: 1s;
+}
+
+.box1 p i {
+    /* position: re; */
+ 
+    
+    font-size: 18px;
+    color: rgb(243, 121, 35);
+    z-index: 4;
+    float: center;
+    transition: 1s;
+    transform: translateY(100px);
+}
+
+.box1 p {
+    /* font-family: 'Pacifico', cursive; */
+    width: 100%;
+    /* text-align: center; */
+    /* bottom: 10%; */
+    margin-left: 10px;
+    color: black;
+    font-weight:bold;
+
+    font-size: 25px;
+    /* float: center; */
+    /* position: absolute; */
+    z-index: 4;
+}
+
+/* banner */
+
+.imgbanner img {
+    /* float: left; */
+    width: 100%;
+    min-height: 150px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+
+/* box2 */
+
+.box2 {
+    position: relative;
+    float: left;
+    width: 48.5%;
+    min-height: 305px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.box2 img {
+    position: absolute;
+    width: 100%;
+    height: 310px;
+    display: block;
+    object-fit: cover;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.box2 .tile i {
+    position: absolute;
+    bottom: 10px;
+    left: 11%;
+    color: white;
+    z-index: 4;
+    float: left;
+    transition: 1s;
+    transform: translateY(100px);
+}
+
+.box2 .tile p {
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: absolute;
+    z-index: 4;
+}
+
+.box2:hover .icons {
+    transform: translateY(0px);
+    transition: 1s;
+}
+
+.box2:hover img {
+    transform: scale(1, 1.2) rotate(3deg)
+}
+
+.box2:hover .tile i {
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+
+
+/* box3 */
+
+.box3 {
+    position: relative;
+    float: left;
+    width: 24%;
+    margin-bottom: 5px;
+    min-height: 150px;
+    overflow: hidden;
+}
+
+.box3 img {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    display: block;
+    object-fit: cover;
+    z-index: 1;
+    transition: 1s;
+}
+
+.box3 .tile i {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    font-size: 10px;
+    color: white;
+    z-index: 4;
+    float: left;
+    transition: 1s;
+    transform: translateY(100px);
+}
+
+.box3 .tile p {
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    position: absolute;
+    z-index: 4;
+    padding: 10px;
+}
+
+.box3:hover .icons {
+    transform: translateY(0px);
+    transition: 1s;
+}
+
+.box3:hover img {
+    transform: scale(1.2) rotate(3deg)
+}
+
+.box3:hover .tile i {
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+
+.box4 {
+    position: relative;
+    float: left;
+    width: 24%;
+    min-height: 150px;
+    overflow: hidden;
+}
+
+.right {
+    margin-right: 6px;
+}
+
+.box4 img {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    display: block;
+    object-fit: cover;
+    z-index: 1;
+    transition: 1s;
+}
+
+.box4 .tile i {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    font-size: 10px;
+    color: white;
+    z-index: 4;
+    float: left;
+    transition: 1s;
+    transform: translateY(100px);
+}
+
+.box4 .tile p {
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    position: absolute;
+    z-index: 4;
+}
+
+.box4:hover .icons {
+    transform: translateY(0px);
+    transition: 1s;
+}
+
+.box4:hover img {
+    transform: scale(1.2) rotate(3deg)
+}
+
+.box4:hover .tile i {
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+
+
+
+
+
+.btnThem {
+    width: 10%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.btnThem a {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background: #B40404;
+}
+
+
+/* show detail km */
+
+.detailKM {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.76);
+    width: 100%;
+    color: #fff;
+    height: 100%;
+    z-index: 999;
+    padding: 10px;
+    padding-right: 30px;
+    transition: 2s;
+    transform: translateY(100%) rotate(180deg);
+}
+
+.box2:hover .detailKM {
+    transform: translateY(0);
+}
+
+.detailKM2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.76);
+    width: 100%;
+    color: #fff;
+    height: 100%;
+    z-index: 999;
+    padding: 10px;
+    padding-right: 30px;
+    transition: 2s;
+    transform: translateX(100%);
+}
+
+.box3:hover .detailKM2 {
+    transform: translateX(0);
+}
+
+.detailKM3 {
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    background: #B40404;
+    width: 100%;
+    color: #fff;
+    height: 100%;
+    z-index: 999;
+    padding: 10px;
+    padding-right: 30px;
+    transition: 2s;
+    transform: translateX(100%) rotate(-30deg);
+}
+
+.box4:hover .detailKM3 {
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    transform: translateX(0);
+}
+
+
+/* Liên hệ */
+
+#wap_lienhe {
+    float: left;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 400px;
+}
+
+table th {
+    text-align: left;
+    padding: 20px;
+}
+
+#lienhe {
+    width: 100%;
+    background: #ffffffe1;
+    float: left;
+}
+
+.inputlh {
+    width: 100%;
+    padding: 10px;
+}
+
+#btn-send {
+    background-color: #B40404;
+    border: 0;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 5px 0px rgba(63, 13, 13, 0.733);
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#btn-send:hover {
+    background-color: #B40404;
+    box-shadow: 0px 2px 0px 0px #B40404;
+}
+
+#ggmap {
+    float: left;
+    width: 50%;
+    height: 400px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#tintuclh {
+    font-family: 'Anton', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    font-style: normal;
+    left: 300px;
+    padding: 15px;
+    border: 3px #fff solid;
+    position: absolute;
+    bottom: 13%;
+}
+
+
+/* footer */
+
+footer {
+    float: left;
+    width: 100%;
+    min-height: 300px;
+    background: #B40404;
+}
+
+.footer-wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.boxTT {
+    float: left;
+    margin: 5px 5px;
+    width: 23%;
+    padding: 10px;
+    text-align: center;
+}
+
+.boxTT p {
+    color: #fff;
+    font-size: 30px;
+}
+
+.boxTT img {
+    margin: 0px;
+    width: 100%;
+}
+
+.boxTT img:hover {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.boxTT #ic_footer {
+    text-align: left;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
